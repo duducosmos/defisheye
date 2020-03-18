@@ -77,21 +77,21 @@ non-negative floats in range 0<=angle<360. The default is 0.
 ## Example
 
 Original
-![Original][./example/images/example3.jpg]
+![Original](./example/images/example3.jpg)
 
 pfov = 120
 
 Equal area  Circular
-![Equal Area][./example/images/out/example3_equalarea_circular_120.jpg]
+![Equal Area](./example/images/out/example3_equalarea_circular_120.jpg)
 
 Equal area Fullframe
-![Equal Area][./example/images/out/example3_equalarea_fullframe_120.jpg]
+![Equal Area](./example/images/out/example3_equalarea_fullframe_120.jpg)
 
 Linear  Circular
-![Equal Area][./example/images/out/example3_linear_circular_120.jpg]
+![Equal Area](./example/images/out/example3_linear_circular_120.jpg)
 
 Linear Fullframe
-![Equal Area][./example/images/out/example3_linear_fullframe_120.jpg]
+![Equal Area](./example/images/out/example3_linear_fullframe_120.jpg)
 
 
 orthographic  Circular
