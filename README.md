@@ -124,10 +124,10 @@ Linear Fullframe
 
 
 orthographic  Circular
-![Equal Area][./example/images/out/example3_orthographic_circular_120.jpg]
+![Equal Area](./example/images/out/example3_orthographic_circular_120.jpg)
 
 Stereographic Circular
-![Equal Area][./example/images/out/example3_stereographic_circular_120.jpg]
+![Equal Area](./example/images/out/example3_stereographic_circular_120.jpg)
 
 
 ## Extra
