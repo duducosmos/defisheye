@@ -16,7 +16,9 @@ setup(
     packages=find_packages("src"),
     package_dir={"":"src"},
     description="Fast defisheye algorithm",
-    lond_description=read("README.md"),
+    long_description=read("README.md"),
+    long_description_content_type="text/markdown",
+    url="https://github.com/duducosmos/defisheye",
     install_requires=["numpy",
                       "opencv-python",
                       ]

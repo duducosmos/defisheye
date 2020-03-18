@@ -5,6 +5,35 @@ Fast Corrects for fisheye distortion in an image.
 Defisheye is designed to transform a fisheye image into a normal perspective
 view looking towards the center of the fisheye image.
 
+## Install
+
+```bash
+python setup.py install
+```
+
+or:
+
+```bash
+pip install defisheye
+```
+
+## Usage
+
+```python
+from defisheye import Defisheye
+
+dtype = 'linear'
+format = 'fullframe'
+fov = 180
+pfov = 120
+
+img = "./images/example3.jpg"
+img_out = f"./images/out/example3_{dtype}_{format}_{pfov}_{fov}.jpg"
+
+obj = Defisheye(img, dtype=dtype, format=format, fov=fov, pfov=pfov)
+obj.convert(img_out)
+```
+
 ## Constructor atributes:
 ### fov
 fisheye field of view (aperture) in degrees.
