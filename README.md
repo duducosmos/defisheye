@@ -31,8 +31,16 @@ img = "./images/example3.jpg"
 img_out = f"./images/out/example3_{dtype}_{format}_{pfov}_{fov}.jpg"
 
 obj = Defisheye(img, dtype=dtype, format=format, fov=fov, pfov=pfov)
-obj.convert(img_out)
+
+# To save image locally 
+obj.convert(outfile=img_out)
+
+# To use the converted image in memory
+
+new_image = obj.convert()
 ```
+
+
 
 ## Constructor atributes:
 ### fov
