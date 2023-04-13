@@ -125,7 +125,7 @@ class Defisheye:
         ys = ys.astype(int)
         return xs, ys
 
-    def convert(self, outfile):
+    def convert(self, outfile=None):
         if self._format == "circular":
             dim = min(self._width, self._height)
         elif self._format == "fullframe":
@@ -151,7 +151,8 @@ class Defisheye:
         img = self._image.copy()
 
         img[i, j, :] = self._image[xs, ys, :]
-        cv2.imwrite(outfile, img)
+        if outfile is not None:
+            cv2.imwrite(outfile, img)
         return img
 
     def _start_att(self, vkwargs, kwargs):
