@@ -10,7 +10,7 @@ def read(filename):
 setup(
     name="defisheye",
     license="Apache License 2.0",
-    version='0.1.1',
+    version='1.0.1',
     author='Eduardo S. Pereira',
     author_email='pereira.somoza@gmail.com',
     packages=find_packages("src"),
