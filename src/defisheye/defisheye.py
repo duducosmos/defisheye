@@ -25,7 +25,7 @@ Copyright [2019] [E. S. Pereira]
 """
 import cv2
 from numpy import arange, sqrt, arctan, sin, tan, zeros, array, meshgrid, pi
-from numpy import argwhere, hypot
+from numpy import ndarray, hypot
 
 
 class Defisheye:
@@ -61,11 +61,10 @@ class Defisheye:
         else:
             raise ImageError("Image format not recognized")
 
-
         width = _image.shape[1]
         height = _image.shape[0]
         xcenter = width // 2
-        ycenter = height  // 2
+        ycenter = height // 2
 
         dim = min(width, height)
         x0 = xcenter - dim // 2
