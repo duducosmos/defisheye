@@ -24,7 +24,7 @@ Copyright [2019] [E. S. Pereira]
    limitations under the License.
 """
 import cv2
-from numpy import arange, sqrt, arctan, sin, tan, zeros, array, meshgrid, pi
+from numpy import arange, sqrt, arctan, sin, tan, meshgrid, pi
 from numpy import ndarray, hypot
 
 
@@ -59,7 +59,7 @@ class Defisheye:
         elif type(infile) == ndarray:
             _image = infile
         else:
-            raise ImageError("Image format not recognized")
+            raise Exception("Image format not recognized")
 
         width = _image.shape[1]
         height = _image.shape[0]
