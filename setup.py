@@ -11,7 +11,7 @@ def read(filename):
 setup(
     name="defisheye",
     license="Apache License 2.0",
-    version='1.0.3',
+    version='1.1.0',
     author='Eduardo S. Pereira',
     author_email='pereira.somoza@gmail.com',
     packages=find_packages("src"),
@@ -22,5 +22,9 @@ setup(
     url="https://github.com/duducosmos/defisheye",
     install_requires=["numpy",
                       "opencv-python",
-                      ]
+                      "argcomplete",
+                      'tqdm'
+                      ],
+    entry_points={"console_scripts": [
+        "defisheye = defisheye.__main__:main"]},
 )

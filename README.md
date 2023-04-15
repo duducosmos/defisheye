@@ -19,6 +19,23 @@ pip install defisheye
 
 ## Usage
 
+### CLI 
+
+For individual Image
+```bash
+defisheye --image example/images/example3.jpg
+```
+
+Process all image in a folder
+
+
+```bash
+defisheye --images_folder example/images --save_dir example/Defisheye
+```
+
+
+### Python Code
+
 ```python
 from defisheye import Defisheye
 
