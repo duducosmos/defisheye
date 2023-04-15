@@ -59,7 +59,16 @@ new_image = obj.convert()
 
 
 
-## Constructor atributes:
+## Parameter/ Atributes:
+
+For CLI command, use "--" and the parameter to pass for the command line: Exemple
+
+```bash
+defisheye --images_folder example/images --save_dir example/Defisheye --fov 140
+```
+
+The default fov is 180, but now was changed by 140 from command line. Same rule for the following parameters.
+
 ### fov
 fisheye field of view (aperture) in degrees.
 
