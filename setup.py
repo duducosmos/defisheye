@@ -16,6 +16,7 @@ setup(
     author_email='pereira.somoza@gmail.com',
     packages=find_packages("src"),
     package_dir={"": "src"},
+    package_data={"": ["gui/*"]},
     description="Fast defisheye algorithm",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
@@ -23,8 +24,10 @@ setup(
     install_requires=["numpy",
                       "opencv-python",
                       "argcomplete",
-                      'tqdm'
+                      'tqdm',
+                      'pygubu'
                       ],
     entry_points={"console_scripts": [
-        "defisheye = defisheye.__main__:main"]},
+        "defisheye = defisheye.__main__:main",
+        "defisheyeapp = defisheye.__main__:mainapp"]},
 )

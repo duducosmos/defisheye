@@ -23,6 +23,8 @@ Copyright [2019] [E. S. Pereira]
 import os
 import argparse
 from .defisheye import Defisheye
+from .defisheyeapp import DefisheyeApp
+
 import argcomplete
 from tqdm import tqdm
 
@@ -55,6 +57,12 @@ def batch_process(input_dir, output_dir, **kwargs):
 
     for in_out_image in tqdm(list(to_process)):
         individual(in_out_image)
+
+
+def mainapp():
+    app = DefisheyeApp()
+    app.run()
+    return 0
 
 
 def main():

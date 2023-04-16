@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="ttk.Frame" id="frame1">
+    <property name="height">900</property>
+    <property name="width">420</property>
+    <layout manager="pack" />
+    <child>
+      <object class="ttk.Frame" id="frame2">
+        <property name="height">50</property>
+        <property name="width">400</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="ipadx">5</property>
+          <property name="ipady">5</property>
+          <property name="padx">5</property>
+          <property name="pady">5</property>
+          <property name="row">0</property>
+        </layout>
+        <child>
+          <object class="ttk.Frame" id="frame3">
+            <property name="height">10</property>
+            <property name="width">200</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="side">top</property>
+            </layout>
+            <child>
+              <object class="ttk.Button" id="openimage" named="True">
+                <property name="width">10</property>
+                <layout manager="pack">
+                  <property name="fill">y</property>
+                  <property name="ipadx">1</property>
+                  <property name="ipady">1</property>
+                  <property name="padx">1</property>
+                  <property name="pady">1</property>
+                  <property name="side">left</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="editimage" named="True">
+                <property name="width">10</property>
+                <layout manager="pack">
+                  <property name="fill">y</property>
+                  <property name="ipadx">1</property>
+                  <property name="ipady">1</property>
+                  <property name="padx">1</property>
+                  <property name="pady">1</property>
+                  <property name="side">left</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Labelframe" id="parameters" named="True">
+            <property name="height">150</property>
+            <property name="labelanchor">nw</property>
+            <property name="relief">flat</property>
+            <property name="text" translatable="yes">Parameters</property>
+            <property name="width">600</property>
+            <layout manager="pack">
+              <property name="side">top</property>
+            </layout>
+            <containerlayout manager="grid">
+              <property name="anchor">center</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="fovlabel" named="True">
+                <property name="text" translatable="yes">FOV
+</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="pfovlabel" named="True">
+                <property name="text" translatable="yes">PFOV</property>
+                <layout manager="grid">
+                  <property name="column">2</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="xcenterlabel" named="True">
+                <property name="text" translatable="yes">X center</property>
+                <layout manager="grid">
+                  <property name="column">4</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="ycenterlabel" named="True">
+                <property name="text" translatable="yes">Y center</property>
+                <layout manager="grid">
+                  <property name="column">6</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="radiuslabel" named="True">
+                <property name="text" translatable="yes">Radius</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="anglelabel" named="True">
+                <property name="text" translatable="yes">Angle</property>
+                <layout manager="grid">
+                  <property name="column">2</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="dtypelabel" named="True">
+                <property name="text" translatable="yes">Dtype</property>
+                <layout manager="grid">
+                  <property name="column">4</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="formatlabel" named="True">
+                <property name="text" translatable="yes">Format</property>
+                <layout manager="grid">
+                  <property name="column">6</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="entryfov" named="True">
+                <property name="exportselection">true</property>
+                <property name="font">TkDefaultFont</property>
+                <property name="takefocus">false</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="ipadx">1</property>
+                  <property name="ipady">1</property>
+                  <property name="padx">1</property>
+                  <property name="pady">1</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="entrypfov" named="True">
+                <layout manager="grid">
+                  <property name="column">3</property>
+                  <property name="ipadx">1</property>
+                  <property name="ipady">1</property>
+                  <property name="padx">1</property>
+                  <property name="pady">1</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="entryxcenter" named="True">
+                <layout manager="grid">
+                  <property name="column">5</property>
+                  <property name="ipadx">1</property>
+                  <property name="ipady">1</property>
+                  <property name="padx">1</property>
+                  <property name="pady">1</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="entryycenter" named="True">
+                <layout manager="grid">
+                  <property name="column">7</property>
+                  <property name="ipadx">1</property>
+                  <property name="ipady">1</property>
+                  <property name="padx">1</property>
+                  <property name="pady">1</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="entryradius" named="True">
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="ipadx">1</property>
+                  <property name="ipady">1</property>
+                  <property name="padx">1</property>
+                  <property name="pady">1</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="entryangle" named="True">
+                <layout manager="grid">
+                  <property name="column">3</property>
+                  <property name="ipadx">1</property>
+                  <property name="ipady">1</property>
+                  <property name="padx">1</property>
+                  <property name="pady">1</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combodtype" named="True">
+                <layout manager="grid">
+                  <property name="column">5</property>
+                  <property name="ipadx">1</property>
+                  <property name="ipady">1</property>
+                  <property name="padx">1</property>
+                  <property name="pady">1</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="comboformat" named="True">
+                <layout manager="grid">
+                  <property name="column">7</property>
+                  <property name="ipadx">1</property>
+                  <property name="ipady">1</property>
+                  <property name="padx">1</property>
+                  <property name="pady">1</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="frame4">
+        <property name="height">600</property>
+        <property name="width">400</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="ipadx">5</property>
+          <property name="ipady">5</property>
+          <property name="padx">5</property>
+          <property name="pady">5</property>
+          <property name="row">1</property>
+        </layout>
+        <child>
+          <object class="ttk.Labelframe" id="originalframe" named="True">
+            <property name="height">400</property>
+            <property name="text" translatable="yes">Original Image</property>
+            <property name="width">400</property>
+            <layout manager="pack">
+              <property name="ipadx">5</property>
+              <property name="ipady">5</property>
+              <property name="padx">5</property>
+              <property name="pady">5</property>
+              <property name="side">left</property>
+            </layout>
+            <containerlayout manager="pack">
+              <property name="propagate">False</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="originalimage" named="True">
+                <property name="anchor">center</property>
+                <property name="justify">center</property>
+                <property name="width">200</property>
+                <layout manager="pack">
+                  <property name="anchor">center</property>
+                  <property name="expand">true</property>
+                  <property name="fill">both</property>
+                  <property name="ipadx">1</property>
+                  <property name="ipady">1</property>
+                  <property name="padx">1</property>
+                  <property name="pady">1</property>
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Labelframe" id="plainframe" named="True">
+            <property name="height">400</property>
+            <property name="text" translatable="yes">Plain Image</property>
+            <property name="width">400</property>
+            <layout manager="pack">
+              <property name="ipadx">5</property>
+              <property name="ipady">5</property>
+              <property name="padx">5</property>
+              <property name="pady">5</property>
+              <property name="side">left</property>
+            </layout>
+            <containerlayout manager="pack">
+              <property name="propagate">False</property>
+            </containerlayout>
+            <child>
+              <object class="ttk.Label" id="editedimage" named="True">
+                <property name="anchor">center</property>
+                <property name="justify">center</property>
+                <property name="width">200</property>
+                <layout manager="pack">
+                  <property name="anchor">center</property>
+                  <property name="expand">true</property>
+                  <property name="fill">both</property>
+                  <property name="ipadx">1</property>
+                  <property name="ipady">1</property>
+                  <property name="padx">1</property>
+                  <property name="pady">1</property>
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
