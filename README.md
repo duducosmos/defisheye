@@ -41,7 +41,7 @@ The GUI version to analyse parameters
 defisheyeapp
 ```
 
-![App](./example/defisheyeapp.png)
+![App](https://raw.githubusercontent.com/duducosmos/defisheye/master/example/defisheyeapp.png)
 
 
 ### Python Code
