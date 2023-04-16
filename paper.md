@@ -1,5 +1,5 @@
 ---
-title: 'Defisheye: A Python package for Fast Corrects for fisheye distortion in an image'
+title: 'Defisheye: A Python Package for Fast Correction of Fisheye Distortion in Images.'
 tags:
   - Python
   - image processing
