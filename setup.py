@@ -11,7 +11,7 @@ def read(filename):
 setup(
     name="defisheye",
     license="Apache License 2.0",
-    version='1.1.0',
+    version='1.2.0',
     author='Eduardo S. Pereira',
     author_email='pereira.somoza@gmail.com',
     packages=find_packages("src"),
@@ -25,7 +25,8 @@ setup(
                       "opencv-python",
                       "argcomplete",
                       'tqdm',
-                      'pygubu'
+                      'pygubu',
+                      'Pillow'
                       ],
     entry_points={"console_scripts": [
         "defisheye = defisheye.__main__:main",

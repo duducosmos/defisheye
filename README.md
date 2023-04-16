@@ -33,6 +33,16 @@ Process all image in a folder
 defisheye --images_folder example/images --save_dir example/Defisheye
 ```
 
+### Defisheye App
+
+The GUI version to analyse parameters 
+
+```bash
+defisheyeapp
+```
+
+![App](./example/defisheyeapp.png)
+
 
 ### Python Code
 
