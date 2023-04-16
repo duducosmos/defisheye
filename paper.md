@@ -27,6 +27,7 @@ bibliography: paper.bib
 
 # Summary
 
+
 The Defisheye toolkit is a powerful tool for transforming distorted fisheye images into normal perspective views. Built using Python, it consists of a command-line interface for processing large quantities of images, as well as a graphical user interface designed specifically for visual analysis to determine the best parameters for a given lens. In addition, the toolkit includes an application programming interface (API) that allows users to access its functionality directly in Python scripts.  The Defisheye toolkit's versatility and compatibility with various hardware and software configurations make it an accessible option for many users. Whether processing a large number of images or conducting detailed visual analysis, the Defisheye toolkit provides an efficient and effective solution for transforming fisheye images into normal perspective views.
 
 
