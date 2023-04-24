@@ -13,7 +13,7 @@ authors:
     corresponding: true # (This is how to denote the corresponding author)
     affiliation: 3
 affiliations:
- - name: 'SENAI-SP, Senior Researcher, São José dos Campos, SP, 12211180, Brazil'
+ - name: 'SENAI-SP, Senior Researcher, Sao Jose dos Campos, SP, 12211180, Brazil'
    index: 1
 
 date: 15 April 2023
