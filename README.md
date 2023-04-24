@@ -178,9 +178,6 @@ Stereographic Circular
 Developed by: E. S. Pereira.
 e-mail: pereira.somoza@gmail.com
 
-Based in the work of F. Weinhaus.
-http://www.fmwconcepts.com/imagemagick/defisheye/index.php
-
 Copyright [2019] [E. S. Pereira]
 
    Licensed under the Apache License, Version 2.0 (the "License");
