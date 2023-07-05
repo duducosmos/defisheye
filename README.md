@@ -191,3 +191,19 @@ Copyright [2019] [E. S. Pereira]
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+# Cite as:
+
+Eduardo dos Santos Pereira. (2023). duducosmos/defisheye: v1.2.1 (v1.2.1). Zenodo. https://doi.org/10.5281/zenodo.8116565
+
+```bib
+@software{eduardo_dos_santos_pereira_2023_8116565,
+  author       = {Eduardo dos Santos Pereira},
+  title        = {duducosmos/defisheye: v1.2.1},
+  month        = jul,
+  year         = 2023,
+  publisher    = {Zenodo},
+  version      = {v1.2.1},
+  doi          = {10.5281/zenodo.8116565},
+  url          = {https://doi.org/10.5281/zenodo.8116565}
+}
+```
