@@ -81,4 +81,17 @@ In summary, the Defisheye toolkit is a Python package that allows for the transf
 We would like to acknowledge the financial support provided by Petrobras through project PDANEEL PD-00553-0042/2016, in relation to Strategic Call n°19/2015 - Development and National Technology of Solar Thermal Electricity Generation. 
 
 
-# References
+# Cite as:
+
+Eduardo dos Santos Pereira. (2023). duducosmos/defisheye: v1.2.1 (v1.2.1). Zenodo. https://doi.org/10.5281/zenodo.8116565
+
+@software{eduardo_dos_santos_pereira_2023_8116565,
+  author       = {Eduardo dos Santos Pereira},
+  title        = {duducosmos/defisheye: v1.2.1},
+  month        = jul,
+  year         = 2023,
+  publisher    = {Zenodo},
+  version      = {v1.2.1},
+  doi          = {10.5281/zenodo.8116565},
+  url          = {https://doi.org/10.5281/zenodo.8116565}
+}
