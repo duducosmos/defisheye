@@ -85,6 +85,7 @@ We would like to acknowledge the financial support provided by Petrobras through
 
 Eduardo dos Santos Pereira. (2023). duducosmos/defisheye: v1.2.1 (v1.2.1). Zenodo. https://doi.org/10.5281/zenodo.8116565
 
+```bib
 @software{eduardo_dos_santos_pereira_2023_8116565,
   author       = {Eduardo dos Santos Pereira},
   title        = {duducosmos/defisheye: v1.2.1},
@@ -95,3 +96,4 @@ Eduardo dos Santos Pereira. (2023). duducosmos/defisheye: v1.2.1 (v1.2.1). Zenod
   doi          = {10.5281/zenodo.8116565},
   url          = {https://doi.org/10.5281/zenodo.8116565}
 }
+```
