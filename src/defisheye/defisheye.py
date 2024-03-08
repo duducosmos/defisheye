@@ -24,7 +24,7 @@ Copyright [2019] [E. S. Pereira]
    limitations under the License.
 """
 import cv2
-from numpy import arange, sqrt, arctan, sin, tan, meshgrid, pi
+from numpy import arange, sqrt, arctan, sin, tan, meshgrid, pi, pad
 from numpy import ndarray, hypot
 
 
@@ -37,6 +37,7 @@ class Defisheye:
     xcenter: x center of fisheye area
     ycenter: y center of fisheye area
     radius: radius of fisheye area
+    pad: Expand image in width and hight 
     angle: image rotation in degrees clockwise
     dtype: linear, equalarea, orthographic, stereographic
     format: circular, fullframe
@@ -48,6 +49,7 @@ class Defisheye:
                    "xcenter": None,
                    "ycenter": None,
                    "radius": None,
+                   "pad": 0,
                    "angle": 0,
                    "dtype": "equalarea",
                    "format": "fullframe"
@@ -60,6 +62,10 @@ class Defisheye:
             _image = infile
         else:
             raise Exception("Image format not recognized")
+
+        if self._pad > 0:
+            _image = cv2.copyMakeBorder(
+                _image, self._pad, self._pad, self._pad, self._pad, cv2.BORDER_CONSTANT)
 
         width = _image.shape[1]
         height = _image.shape[0]

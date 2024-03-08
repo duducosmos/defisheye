@@ -121,6 +121,10 @@ class DefisheyeApp:
         self._format.set(self._format_combo['values'][0])
         self._format_combo['textvariable'] = self._format
 
+        self._xpand_entry = self.builder.get_object("xentry")
+        self._xpand.set(0)
+        self._xpand_entry['textvariable'] = self._xpand
+
     def _vars(self):
         self._fov = tk.IntVar()
         self._pfov = tk.IntVar()
@@ -133,6 +137,8 @@ class DefisheyeApp:
         self._dtype = tk.StringVar()
         self._format = tk.StringVar()
 
+        self._xpand = tk.IntVar()
+
         self._original_image = None
         self._original_imag_file = None
 
@@ -144,6 +150,7 @@ class DefisheyeApp:
             multiple=False, filetypes=f_types)
 
         img = Image.open(self._original_imag_file)
+
         # width, height = img.size
         width_new = int(400)
         height_new = int(400)
@@ -159,6 +166,7 @@ class DefisheyeApp:
                    "xcenter": self._xcenter.get() if self._xcenter.get() != -1 else None,
                    "ycenter": self._ycenter.get() if self._ycenter.get() != -1 else None,
                    "radius": self._radius.get() if self._radius.get() != -1 else None,
+                   "pad": self._xpand.get() if self._xpand.get() > 0 else 0,
                    "angle": self._angle.get() if self._angle.get() != -1 else None,
                    "dtype": self._dtype.get(),
                    "format": self._format.get()

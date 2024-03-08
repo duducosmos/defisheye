@@ -237,6 +237,26 @@
                 </layout>
               </object>
             </child>
+            <child>
+              <object class="ttk.Label" id="labelx" named="True">
+                <property name="padding">2</property>
+                <property name="relief">flat</property>
+                <property name="text" translatable="yes">Pad</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="xentry" named="True">
+                <property name="text" translatable="yes">0</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
           </object>
         </child>
       </object>
