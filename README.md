@@ -147,6 +147,10 @@ ANGLE is the clockwise positive rotation angle for the output perspective
 image relative to the orientation of the input fisheye image. Values are
 non-negative floats in range 0<=angle<360. The default is 0.
 
+### pad
+
+Expand original image (padding), used to get final processed image with size next to original image.
+
 ## Example
 
 Original
