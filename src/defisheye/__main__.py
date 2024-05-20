@@ -92,9 +92,13 @@ def main():
 
     parser.add_argument("--radius", type=int, default=None,
                         help="output directory", required=False)
+    
+    parser.add_argument("--pad", type=int, default=0,
+                        help="Padding original image", required=False)
 
     parser.add_argument("--angle", type=int, default=0,
                         help="output directory", required=False)
+    
 
     parser.add_argument("--dtype", type=str, default="equalarea",
                         help="output directory", required=False)
@@ -113,7 +117,8 @@ def main():
                "radius": cfg.radius,
                "angle": cfg.angle,
                "dtype": cfg.dtype,
-               "format": cfg.format
+               "format": cfg.format,
+               "pad": cfg.pad
                }
 
     if cfg.image is not None:

@@ -11,7 +11,7 @@ def read(filename):
 setup(
     name="defisheye",
     license="Apache License 2.0",
-    version='1.3.0',
+    version='1.4.0',
     author='Eduardo S. Pereira',
     author_email='pereira.somoza@gmail.com',
     packages=find_packages("src"),
