@@ -26,7 +26,7 @@ Copyright [2019] [E. S. Pereira]
 import cv2
 from numpy import arange, sqrt, arctan, sin, tan, meshgrid, pi, pad
 from numpy import ndarray, hypot
-
+import numpy as np
 
 class Defisheye:
     """
@@ -117,8 +117,8 @@ class Defisheye:
             rr = ifoc * tan(phiang / 2)
 
         rdmask = rd != 0
-        xs = xd.copy()
-        ys = yd.copy()
+        xs = xd.astype(np.float32).copy()
+        ys = yd.astype(np.float32).copy()
 
         xs[rdmask] = (rr[rdmask] / rd[rdmask]) * xd[rdmask] + self._xcenter
         ys[rdmask] = (rr[rdmask] / rd[rdmask]) * yd[rdmask] + self._ycenter
@@ -126,8 +126,6 @@ class Defisheye:
         xs[~rdmask] = 0
         ys[~rdmask] = 0
 
-        xs = xs.astype(int)
-        ys = ys.astype(int)
         return xs, ys
 
     def convert(self, outfile=None):
@@ -153,9 +151,8 @@ class Defisheye:
         i, j = meshgrid(i, j)
 
         xs, ys, = self._map(i, j, ofocinv, dim)
-        img = self._image.copy()
 
-        img[i, j, :] = self._image[xs, ys, :]
+        img = cv2.remap(self._image, xs, ys, cv2.INTER_LINEAR)
         if outfile is not None:
             cv2.imwrite(outfile, img)
         return img
